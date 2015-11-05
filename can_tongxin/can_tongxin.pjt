@@ -1,0 +1,68 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\chengxu\can_tongxin\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="Configuration1.tcf"
+Source="source\can_commucation.c"
+Source="source\DSP281x_Adc.c"
+Source="source\DSP281x_CpuTimers.c"
+Source="source\DSP281x_DefaultIsr.c"
+Source="source\DSP281x_Ev.c"
+Source="source\DSP281x_GlobalVariableDefs.c"
+Source="source\DSP281x_InitPeripherals.c"
+Source="source\DSP281x_Mcbsp.c"
+Source="source\DSP281x_MemCopy.c"
+Source="source\DSP281x_PieCtrl.c"
+Source="source\DSP281x_PieVect.c"
+Source="source\DSP281x_Sci.c"
+Source="source\DSP281x_Spi.c"
+Source="source\DSP281x_SysCtrl.c"
+Source="source\DSP281x_Xintf.c"
+Source="source\DSP281x_XIntrupt.c"
+Source="source\DSP28_ECan.c"
+Source="source\DSP28_Gpio.c"
+Source="source\main.c"
+Source="Configuration1cfg.cmd"
+Source="DSP281x_Headers_BIOS.cmd"
+
+[Generated Files]
+Source="Configuration1cfg.s28"
+Source="Configuration1cfg_c.c"
+
+["Compiler" Settings: "Debug"]
+Options=-g -fr"$(Proj_dir)\Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28
+
+["Compiler" Settings: "Release"]
+Options=-o3 -fr"$(Proj_dir)\Release" -d"LARGE_MODEL" -ml -v28
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-Dconfig.importPath="$(Install_dir)/bios_5_31_02/packages;"
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\can_tongxin.map" -o".\Debug\can_tongxin.out" -stack800 -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\can_tongxin.map" -o".\Release\can_tongxin.out" -w -x
+
+["Configuration1cfg.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["Configuration1cfg.cmd" Settings: "Release"]
+LinkOrder=1
+
+["DSP281x_Headers_BIOS.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["DSP281x_Headers_BIOS.cmd" Settings: "Release"]
+LinkOrder=1
+

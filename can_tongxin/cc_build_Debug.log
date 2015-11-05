@@ -1,0 +1,12 @@
+--------------------------  can_tongxin.pjt - Debug  --------------------------
+[can_commucation.c] "D:\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -g -fr"E:/chengxu/can_tongxin/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"../Debug.lkf" "can_commucation.c"
+
+[Configuration1cfg.s28] "D:\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -g -fr"E:/chengxu/can_tongxin/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "Configuration1cfg.s28"
+
+[Configuration1cfg_c.c] "D:\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -g -fr"E:/chengxu/can_tongxin/Debug" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 -@"Debug.lkf" "Configuration1cfg_c.c"
+
+[Linking...] "D:\CCStudio_v3.3\C2000\cgtools\bin\cl2000" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.
