@@ -17,7 +17,6 @@ int HandShake(void)
 	}
 }
 
-
 			if(receive_status() == 0x31)     //辨识报文
 			{
 				SendData(0xAA);      //发送进入下一状态的信息

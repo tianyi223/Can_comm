@@ -2,5 +2,5 @@
 # This file contains tconf options for file "Configuration1.tcf",
 # for use by the Gconf graphical configuration tool.
 # The options are exported from the following CCS project: 
-# E:\chengxu\can_tongxin\can_tongxin.pjt, "Debug" configuration.
+# E:\chengxu\can_comm\can_tongxin\can_tongxin.pjt, "Debug" configuration.
 -Dconfig.importPath="D:\CCStudio_v3.3/bios_5_31_02/packages;"
